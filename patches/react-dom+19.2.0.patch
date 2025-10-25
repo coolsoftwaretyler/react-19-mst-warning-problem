@@ -1,0 +1,17 @@
+diff --git a/node_modules/react-dom/cjs/react-dom-client.development.js b/node_modules/react-dom/cjs/react-dom-client.development.js
+index d005d8b..532bad1 100644
+--- a/node_modules/react-dom/cjs/react-dom-client.development.js
++++ b/node_modules/react-dom/cjs/react-dom-client.development.js
+@@ -25521,11 +25521,7 @@
+       REMOVED = "\u2013\u00a0",
+       ADDED = "+\u00a0",
+       UNCHANGED = "\u2007\u00a0",
+-      supportsUserTiming =
+-        "undefined" !== typeof console &&
+-        "function" === typeof console.timeStamp &&
+-        "undefined" !== typeof performance &&
+-        "function" === typeof performance.measure,
++      supportsUserTiming = false, // Patched: Disabled to prevent MST warnings in React 19.2
+       COMPONENTS_TRACK = "Components \u269b",
+       LANES_TRACK_GROUP = "Scheduler \u269b",
+       currentTrack = "Blocking",

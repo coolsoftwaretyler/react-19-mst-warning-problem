@@ -6,6 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "postinstall": "patch-package",
     "react-18": "npm install react@18.3.1 react-dom@18.3.1 && echo '✅ Now using React 18'",
     "react-19": "npm install react@19.0.0 react-dom@19.0.0 && echo '✅ Now using React 19'",
     "react-19-1": "npm install react@19.1.0 react-dom@19.1.0 && echo '✅ Now using React 19.1'",
@@ -15,11 +16,12 @@
     "mobx": "^6.13.5",
     "mobx-react-lite": "^4.0.7",
     "mobx-state-tree": "^7.0.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "patch-package": "^8.0.1",
     "vite": "^6.0.3"
   }
 }
